@@ -15,5 +15,10 @@ public class TestUtil {
   public void example() { assertTrue(true); }
 
   @Test
-  public void () { assertTrue(true); }
+  public void whenArgsLengthIsOne() {
+    c = new Util();
+    int[] arr = new int[1];
+    boolean result = c.compute(arr);
+    assertTrue(result == false);
+  }
 }
