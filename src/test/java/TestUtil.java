@@ -13,4 +13,7 @@ public class TestUtil {
 
   @Test
   public void example() { assertTrue(true); }
+
+  @Test
+  public void () { assertTrue(true); }
 }
