@@ -50,5 +50,14 @@ public class TestUtil {
         assertTrue(result == true);
       }
 
-
+  @Test
+        public void whenArgsLengthIsNotEven_isNotOne_DoesNotInclude0_NoneOfTheRemaindersIsZero() {
+          c = new Util();
+          int[] arr = new int[3];
+          arr[0] = 3;
+          arr[1] = 3;
+          arr[2] = 5;
+          boolean result = c.compute(arr);
+          assertTrue(result == false);
+        }
 }
