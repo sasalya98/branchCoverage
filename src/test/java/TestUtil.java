@@ -29,4 +29,14 @@ public class TestUtil {
       boolean result = c.compute(arr);
       assertTrue(result == false);
     }
+
+    @Test(expected = RuntimeException.class)
+        public void whenThrowRunTimeExceptionWhenEncounteredZeroElement() {
+          c = new Util();
+          int[] arr = new int[3];
+          arr[0] = 0;
+          c.compute(arr);
+
+
+        }
 }
