@@ -21,4 +21,12 @@ public class TestUtil {
     boolean result = c.compute(arr);
     assertTrue(result == false);
   }
+
+  @Test
+    public void whenArgsLengthIsEven() {
+      c = new Util();
+      int[] arr = new int[2];
+      boolean result = c.compute(arr);
+      assertTrue(result == false);
+    }
 }
